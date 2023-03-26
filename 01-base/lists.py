@@ -43,7 +43,7 @@ print(basket.index(2)) # returns the position
 
 letters = ["a", "x", "b", "c", "d", "e", "d"]
 
-print(letters.index("d", 0, 4))
+print(letters.index("d", 0, 4)) #returns the position or the parameter in the range we specified
 print("d" in letters)
 print(letters.count("d"))
 
@@ -52,3 +52,27 @@ letters.reverse()
 # letters.sort()
 # sorted(letters)
 print(sorted(basket))
+
+# Common List Patterns
+basket.sort()
+basket.reverse()
+print(basket[::-1]) # reverse a list without .reverse()
+
+print(list(range(1, 100))) # create a list with the specified range, if we don't put the first parameter it will start since 0
+sentence = "!"
+new_sentence = sentence.join(["hi", "my", "name", "is", "JOJO"])
+new_sentence = " ".join(["hi", "my", "name", "is", "JOJO"])
+
+print(new_sentence) # return "hi!my!name!is!JOJO"
+
+# List Unpacking
+a, b, c, *other, d = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+print(a) # 1
+print(b) # 2
+print(c) # 3
+print(other) # [4, 5, 6, 7, 8]
+print(d) # 9
+
+# None
+weapons = None
