@@ -12,3 +12,4 @@ class D(B, C):
     pass
 
 print(D.num) # 1
+print(D.mro()) # Says the order of declaration
